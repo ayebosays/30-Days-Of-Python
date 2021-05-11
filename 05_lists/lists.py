@@ -278,9 +278,82 @@
 # print(fruits.index('peach'))
 
 
-# Reversing a List
+# # Reversing a List
+# #
+# # The reverse method .revers() reverses the order of a list
+# fruits = ['banana', 'apple', 'pear', 'peach', 'mango']
+# fruits.reverse()
+# print(fruits)        # ['mango], 'peach', ... 'banana']
+
+# numbers = [1,2,3,4,5,6,7,8,9,10]
+# numbers.reverse()
+# print(numbers)
+
+# # Sorting List Items
+# #
+# # The sort method .sort() is used to reorder the list items in ascending order and modifies the original.
+# # The sorted method .sorted() returns the ordered list without modifying the original
+# fruits = ['banana', 'apple', 'pear', 'peach', 'mango']
+# fruits.sort()       # alphabetical sort = ascending for strings
+# print(fruits)
+# fruits.sort(reverse=True)   # reverse alphabetical ordered strings
+# print(fruits)
+
+# numbers = [5, 4, 1, 3, 2, 7, 1, 0, 6, 2, 3, 3, 4, 5]
+# numbers.sort()
+# print(numbers)
+# numbers.sort(reverse=True)
+# print(numbers)
+
+# Exercises: Day 5
 #
-# The reverse method .revers() reverses the order of a list
-fruits = ['banana', 'apple', 'pear', 'peach', 'mango']
-fruits.reverse()
-print(fruits)        # ['mango], 'peach', ... 'banana']
+# Exercises: Level 1
+# 1. Declare an empty list
+_list = []
+print("_list: ",_list)
+
+
+# 2. Declare a list with more than 5 items
+_list = [5, 1, 3, 4, 2]
+
+# 3. Find the length of your list
+_length = len(_list)
+print("_list length: ", _length)
+
+# 4. Get the first item, the middle item and the last item of the list
+first_item = _list[0]   # should be 5
+last_item = _list[-1]   # should be 2
+print(first_item)
+print(last_item)
+
+# 5. Declare a list called mixed_data_types, put your(name, age, height, marital status, address)
+mixed_data_types = ["Abel", 32, "6'2", "single", "Indio, CA"]
+print(mixed_data_types)
+
+# 6. Declare a list variable named it_companies and assign initial values Facebook, Google, Microsoft, Apple, IBM, Oracle and Amazon.
+_companies = ["Facebook", "Google", "Microsoft", "Apple", "IBM", "Oracle", "Amazon"]
+
+# 7. Print the list using print()
+print(_companies)
+
+# 8. Print the number of companies in the list
+print("_companies count:", len(_companies))
+
+# 9. Print the first, middle and last company
+_first = _companies[0]
+_middle_item_number = len(_companies) // 2
+_middle = _companies[_middle_item_number]
+_last = _companies[-1]
+print("First company: ", _first)
+print("Middle company: ", _middle)
+print("Last company: ", _last) 
+
+# 10. Print the list after modifying one of the companies
+_companies.remove("Amazon")
+print("After removing Amazon: ", _companies)
+
+# 11. Add an IT company to it_companies
+_companies.append("Samsung")
+print("After appending Samsung to _companies: ", _companies)
+
+# 12. Insert an IT company in the middle of the companies list
