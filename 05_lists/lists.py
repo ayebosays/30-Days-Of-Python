@@ -305,30 +305,30 @@
 # numbers.sort(reverse=True)
 # print(numbers)
 
-# Exercises: Day 5
-#
-# Exercises: Level 1
-# 1. Declare an empty list
-_list = []
-print("_list: ",_list)
+# # Exercises: Day 5
+# #
+# # Exercises: Level 1
+# # 1. Declare an empty list
+# _list = []
+# print("_list: ",_list)
 
 
-# 2. Declare a list with more than 5 items
-_list = [5, 1, 3, 4, 2]
+# # 2. Declare a list with more than 5 items
+# _list = [5, 1, 3, 4, 2]
 
-# 3. Find the length of your list
-_length = len(_list)
-print("_list length: ", _length)
+# # 3. Find the length of your list
+# _length = len(_list)
+# print("_list length: ", _length)
 
-# 4. Get the first item, the middle item and the last item of the list
-first_item = _list[0]   # should be 5
-last_item = _list[-1]   # should be 2
-print(first_item)
-print(last_item)
+# # 4. Get the first item, the middle item and the last item of the list
+# first_item = _list[0]   # should be 5
+# last_item = _list[-1]   # should be 2
+# print(first_item)
+# print(last_item)
 
-# 5. Declare a list called mixed_data_types, put your(name, age, height, marital status, address)
-mixed_data_types = ["Abel", 32, "6'2", "single", "Indio, CA"]
-print(mixed_data_types)
+# # 5. Declare a list called mixed_data_types, put your(name, age, height, marital status, address)
+# mixed_data_types = ["Abel", 32, "6'2", "single", "Indio, CA"]
+# print(mixed_data_types)
 
 # 6. Declare a list variable named it_companies and assign initial values Facebook, Google, Microsoft, Apple, IBM, Oracle and Amazon.
 _companies = ["Facebook", "Google", "Microsoft", "Apple", "IBM", "Oracle", "Amazon"]
@@ -357,3 +357,12 @@ _companies.append("Samsung")
 print("After appending Samsung to _companies: ", _companies)
 
 # 12. Insert an IT company in the middle of the companies list
+_middle_index = _companies.index(_middle)
+print(_middle_index)
+
+_companies.pop(_middle_index)
+_middle_to_add = "Square"
+_companies.insert(_middle_index, _middle_to_add)
+print(_companies)
+
+# 13. Change one of the it_companies names to uppercase (IBM excluded!)
